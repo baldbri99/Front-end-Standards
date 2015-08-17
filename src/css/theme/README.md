@@ -36,6 +36,6 @@ $brand-link-hover: $brand-name-link-hover;
 
 ## About
 
-![Bisk Education Logo](src/images/logo.png)
+![Bisk Education Logo](../../images/logo.png)
 
 Front-end Standards is maintained by Bisk Education, inc. The names and logos for Bisk are trademarks of Bisk Education, inc.
