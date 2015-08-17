@@ -4,6 +4,11 @@
 # This takes care of .tmp, .sass-cache, and many others #
 .*/
 
+# Ignore Wiki
+# It should push and pull in its own folder
+Front-end-Standards.wiki
+Front-end-Standards.wiki/*
+
 # Ignore OS generated files #
 .DS_Store*
 ehthumbs.db
