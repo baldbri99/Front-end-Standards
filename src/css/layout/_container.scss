@@ -1,0 +1,30 @@
+// Copyright 2015 Bisk Education
+//
+// Main Layout Styles
+//
+
+.l-main {
+  max-width: container(96rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 110px 2.5% 0;
+  overflow: hidden;
+  z-index: $z-l-main;
+  @include media(laptop) {
+    padding: 125px 0 0;
+  }
+}
+
+// Grid style classes
+.l-row {
+  @include container();
+}
+.l-half {
+  @include span(12);
+  @include media(phablet) {
+    @include span(6);
+  }
+}
+.l-last {
+  @include last;
+}

@@ -1,0 +1,131 @@
+// Copyright 2015 Bisk Education
+//
+// Buttons
+//
+
+// Main Button // --------------------------
+.m-button {
+  width: auto;
+  display: inline-block;
+  margin: 0.4rem 0;
+  padding: 0 2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  font-weight: $font-bold;
+  line-height: 4rem;
+  text-align: center;
+  text-indent: 0;
+  text-decoration: none;
+  @include media(handheld) {
+    width: 100%;
+  }
+
+  // Icon within button
+  i.fa,
+  i[class*='lms-'] {
+    position: relative;
+    top: 2px;
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+  }
+
+  // Disabled feature
+  &[disabled],
+  &.is-disabled {
+    pointer-events: none;
+  }
+}
+// Page change, common/repeatable actions
+.m-button-default {
+  background: $button-default-bkg;
+  border-color: $button-default-border;
+  color: $button-default-color;
+  &:hover {
+    @include background-gradient($button-default-bkg, darken($button-default-bkg, 2), vertical);
+    border-color: $silver-chalice;
+    color: $button-default-color;
+  }
+  &[disabled],
+  &.is-disabled {
+    color: lighten($button-default-color, 33);
+    &:hover {
+      border-color: $button-default-border;
+      color: lighten($button-default-color, 33);
+    }
+  }
+}
+// Primary page action, create, save, submit actions
+.m-button-primary {
+  background: $button-primary-bkg;
+  border-color: $button-primary-border;
+  color: $button-primary-color;
+  &:hover {
+    @include background-gradient($button-primary-bkg, darken($button-primary-bkg, 20), vertical);
+    border-color: darken($button-primary-border, 20);
+    color: $button-primary-color;
+  }
+  &[disabled],
+  &.is-disabled {
+    background: lighten($button-primary-bkg, 16);
+    border-color: lighten($button-primary-border, 13);
+    color: darken($button-primary-color, 23);
+    &:hover {
+      border-color: $button-primary-border;
+      color: lighten($button-primary-color, 33);
+    }
+  }
+}
+// Similar or opposing option as to primary action. Preview, edit, remove, etc
+.m-button-secondary {
+  background: $button-secondary-bkg;
+  border-color: $button-secondary-border;
+  color: $button-secondary-color;
+  &:hover {
+    @include background-gradient($button-secondary-bkg, darken($button-secondary-bkg, 2), vertical);
+    border-color: darken($button-secondary-border, 13);
+    color: $button-secondary-color;
+  }
+  &[disabled],
+  &.is-disabled {
+    background: lighten($button-secondary-bkg, 2);
+    border-color: $button-secondary-border;
+    color: lighten($button-secondary-color, 33);
+  }
+}
+// Navigation, toggles, switches, pagination
+.m-button-tertiary {
+  @include background-gradient($button-tertiary-bkg, darken($button-tertiary-bkg, 8), vertical);
+  border-color: $button-tertiary-border;
+  color: $button-tertiary-color;
+  &:hover {
+    @include background-gradient(darken($button-tertiary-bkg, 5), darken($button-tertiary-bkg, 11), vertical);
+    border-color: darken($button-tertiary-border, 13);
+    color: $button-tertiary-color;
+  }
+  &[disabled],
+  &.is-disabled {
+    background: $button-tertiary-bkg;
+    border-color: $button-tertiary-border;
+    color: lighten($button-tertiary-color, 33);
+  }
+}
+// Green button. May or may not ever get used. **Revisit later.
+.m-button-success {
+  background: $button-success-bkg;
+  border-color: $button-success-border;
+  color: $button-success-color;
+}
+// Similar or opposing option as to primary action. Preview, edit, remove, etc
+.m-button-clear {
+  background: $button-clear-bkg;
+  border-color: $button-clear-border;
+  color: $button-clear-color;
+  &:hover {
+    color: $button-clear-color;
+  }
+  &[disabled],
+  &.is-disabled {
+    @include opacity(0.25);
+  }
+}
