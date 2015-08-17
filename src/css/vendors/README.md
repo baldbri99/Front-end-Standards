@@ -16,3 +16,9 @@ would look similar to:
    |  |- _path.scss
    |  |- _font-awesome.scss
 ```
+
+## About
+
+![Bisk Education Logo](src/images/logo.png)
+
+Front-end Standards is maintained by Bisk Education, inc. The names and logos for Bisk are trademarks of Bisk Education, inc.
